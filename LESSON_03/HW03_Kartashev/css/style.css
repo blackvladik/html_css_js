@@ -1,0 +1,106 @@
+body {
+	font: 15px sans-serif;
+}
+
+.number-task {
+	font-weight: bold;
+}
+
+.code {
+	background: rgb(240, 237, 237);
+}
+
+.task {
+	list-style: none;
+}
+
+.task-3 dt, .task-4 dt {
+	font-weight: bold;
+}
+
+.task li::before, .task-3 dd::before, .task-4 dd::before {
+	content: '\2714   ';
+	color: green;
+	font-size: 24px;
+}
+
+blockquote {
+	background: rgb(248, 240, 208);
+	border: 3px solid green;
+	border-radius: 15px;
+	text-align: center;
+	padding: 20px 10px;
+}
+
+blockquote p {
+	font-size: 18px;
+	color: green;
+}
+
+blockquote cite {
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(54, 54, 0);
+}
+
+blockquote cite::before {
+	content: '\201E   ';
+}
+
+blockquote cite::after {
+	content: ' \201D';
+}
+
+blockquote cite::before, blockquote cite::after {
+	font-size: 44px;
+	color: rgb(145, 22, 22);
+}
+
+.task-3 dd:last-child {
+	color: green;
+}
+
+.source-code {
+	border: 1px dashed green;
+	padding: 30px;
+}
+
+.list a[href^="https://"] {
+	color: red;
+}
+
+a[href^="http://"] {
+	color: #ff8d00;
+}
+
+ul+p {
+	font-size: 30px;
+}
+
+a[title] {
+	border: 1px solid #067b09;
+}
+
+.text-box h3:first-child {
+	color: pink;
+}
+
+.text-box p#greycol {
+	color: grey;
+}
+
+.text-box div p {
+	color: red;
+}
+
+.text-box h3[title] {
+	color: blue;
+}
+
+div.text-box>p:nth-child(4n) {
+	color: green;
+}
+
+.yellow {
+	color: yellow;
+}

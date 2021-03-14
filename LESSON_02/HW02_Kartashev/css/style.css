@@ -1,0 +1,59 @@
+.task-font {
+	font: 15.2px sans-serif;
+}
+
+q {
+	quotes: "\00ab""\00bb";
+}
+
+.task {
+	font-weight: bold;
+}
+
+.task-1 {
+	width: 500px;
+}
+
+.task-2 {
+	width: 700px;
+}
+
+hr {
+	border-bottom: 2px solid #ddd;
+}
+
+table, th, td{
+	border: 1px solid black;
+}
+
+th {
+	background-color: #01ffff;
+	padding: 17px 0px 17px 0px;
+	font-size: 14px;
+}
+
+td {
+	background-color: #e0ffdf;
+	padding: 18px 18px 16px 17px;
+	font-size: 14px;
+}
+
+tfoot {
+	text-align: center;
+}
+
+table {
+	margin-bottom: 40px;
+}
+
+.main-menu ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.main-menu ul li a {
+	padding: 5px 15px;
+	text-decoration: none;
+}

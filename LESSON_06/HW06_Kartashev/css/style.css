@@ -1,0 +1,130 @@
+body {
+	counter-reset: counter-task;
+	font: 15px Arial, Helvetica, sans-serif;
+	margin: 0 10px;
+}
+
+hr {
+	border-bottom: 2px solid #ddd;
+}
+
+.counter-task::before {
+	counter-increment: counter-task;
+	content: counter(counter-task) ". ";
+}
+
+.item-task {
+	list-style-type: none;
+	counter-reset: item;
+	padding-left: 0;
+}
+
+.all-box {
+	position: relative;
+}
+
+.box {
+	width: 60px;
+	height: 60px;
+	position: relative;
+}
+
+.box-1 {
+	background-color: #ff8888;
+}
+
+.box-2 {
+	background-color: #7e8aeb;
+	left: 35px;
+	top: -23px;
+	z-index: 1;
+}
+
+.box-3 {
+	background-color: #4def99;
+	left: 71px;
+	top: -46px;
+}
+
+.text-box {
+	position: relative;
+}
+
+.text-box h1 {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+}
+
+.text-box h2 {
+	position: relative;
+	left: -20px;
+	bottom: -30px;
+}
+
+.text-box h3 {
+	position: static;
+	top: 100px;
+	left: 50px;
+}
+
+.block-card {
+	width: 700px;
+	height: 600px;
+	background-color: #0d5825;
+	color: #fff;
+	font-size: 24px;
+	font-family: serif;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+
+.block-card blockquote p {
+	font-weight: 700;
+	margin: 0;
+}
+
+.block-card blockquote p::before {
+	content: '\201c';
+}
+
+.block-card blockquote p::after {
+	content: '\201d';
+}
+
+.card {
+	width: 150px;
+	position: absolute;
+	transition: all 0.5s ease-in-out;
+}
+
+.card-1 {
+	top: 190px;
+	left: 195px;
+	transform: rotate(335deg);
+}
+
+.card-2 {
+	top: 200px;
+	left: 250px;
+	transform: rotate(350deg);
+}
+
+.card-3 {
+	top: 220px;
+	left: 305px;
+	transform: rotate(8deg);
+}
+
+.card-1:hover {
+	transform: rotate(335deg) translateY(-25px);
+}
+
+.card-2:hover {
+	transform: rotate(350deg) translateY(-25px);
+}
+
+.card-3:hover {
+	transform: rotate(8deg) translateY(-25px);
+}
